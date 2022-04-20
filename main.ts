@@ -1,10 +1,9 @@
+let Sum = 0
 input.onButtonPressed(Button.A, function () {
-    let index = 0
     for (let index = 0; index <= 10; index++) {
-        index += 1
-        index = index + 1
+        Sum = index + Sum
     }
-    basic.showNumber(index)
+    basic.showNumber(Sum)
 })
 basic.forever(function () {
 	
